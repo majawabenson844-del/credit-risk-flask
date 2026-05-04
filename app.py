@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import joblib
+import sqlite3
+import datetime
 
 app = Flask(__name__)
 
@@ -28,6 +30,25 @@ except Exception as e:
     data = pd.DataFrame()
 
 # ===============================
+# Initialize SQLite DB
+# ===============================
+def init_db():
+    conn = sqlite3.connect("history.db")
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS predictions (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    full_name TEXT,
+                    id_number TEXT,
+                    phone_number TEXT,
+                    prediction_summary TEXT,
+                    timestamp TEXT
+                )''')
+    conn.commit()
+    conn.close()
+
+init_db()
+
+# ===============================
 # Routes
 # ===============================
 @app.route("/")
@@ -37,6 +58,11 @@ def home():
 @app.route("/predict", methods=["GET", "POST"])
 def predict():
     if request.method == "POST":
+        # Collect extra fields
+        full_name = request.form.get("full_name")
+        id_number = request.form.get("id_number")
+        phone_number = request.form.get("phone_number")
+
         try:
             age = int(request.form.get("Age"))
             loan_amount = int(request.form.get("Loan_amt"))
@@ -133,8 +159,17 @@ def predict():
         # Build summary
         summary = f"{approvals} model(s) approved, {rejections} model(s) rejected."
 
+        # Save to history
+        conn = sqlite3.connect("history.db")
+        c = conn.cursor()
+        c.execute("INSERT INTO predictions (full_name, id_number, phone_number, prediction_summary, timestamp) VALUES (?, ?, ?, ?, ?)",
+                  (full_name, id_number, phone_number, summary, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        conn.commit()
+        conn.close()
+
         return render_template("predict.html", title="Predict",
                                results=results, summary=summary,
+                               full_name=full_name,
                                gender_options=data["Gender"].unique().tolist(),
                                marital_options=data["Marital_Status"].unique().tolist(),
                                employment_options=data["Employment_Status"].unique().tolist(),
@@ -148,6 +183,15 @@ def predict():
                            employment_options=data["Employment_Status"].unique().tolist(),
                            residence_options=data["Residence_Area"].unique().tolist(),
                            home_options=data["Home_Ownership"].unique().tolist())
+
+@app.route("/history")
+def history():
+    conn = sqlite3.connect("history.db")
+    c = conn.cursor()
+    c.execute("SELECT full_name, id_number, phone_number, prediction_summary, timestamp FROM predictions ORDER BY timestamp DESC")
+    rows = c.fetchall()
+    conn.close()
+    return render_template("history.html", title="History", rows=rows)
 
 @app.route("/model-info")
 def model_info():
