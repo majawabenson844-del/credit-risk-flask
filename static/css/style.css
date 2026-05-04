@@ -1,0 +1,15 @@
+/* Make all body text darker */
+body, p, label, select, input, option, .form-label, .form-select, .form-control {
+  color: #212529 !important;  /* Bootstrap's darkest text */
+}
+
+/* Ensure dropdown options are visible */
+option {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* Strengthen card text */
+.card-body {
+  color: #212529 !important;
+}
