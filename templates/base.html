@@ -32,7 +32,7 @@
       margin-bottom: 20px;
       border: 1px solid rgba(245, 199, 122, 0.2);
       box-shadow: 0 0 25px rgba(245, 199, 122, 0.15);
-      color:#f5c77a; /* ensure card text is gold */
+      color:#f5c77a;
     }
 
     /* Headings */
@@ -53,25 +53,31 @@
       border-color:#ffd98e;
       box-shadow:0 0 10px rgba(245,199,122,0.5);
     }
-    option { color:#000; } /* dropdown options visible */
+    option { color:#000; }
 
     /* Buttons */
     .btn-warning {
       background: linear-gradient(90deg, #f5c77a, #ffd98e);
-      color:black; 
-      border-radius:12px;
-      font-weight:800; 
-      box-shadow:0 0 15px rgba(245,199,122,0.4);
+      color:black; border-radius:12px;
+      font-weight:800; box-shadow:0 0 15px rgba(245,199,122,0.4);
     }
-    .btn-warning:hover { 
-      transform:scale(1.05); 
-      box-shadow:0 0 25px rgba(245,199,122,0.7); 
-    }
+    .btn-warning:hover { transform:scale(1.05); box-shadow:0 0 25px rgba(245,199,122,0.7); }
 
     /* Alerts */
     .alert-success { background-color:#28a745; color:#fff; font-weight:700; }
     .alert-danger { background-color:#dc3545; color:#fff; font-weight:700; }
     .alert-info { background-color:#17a2b8; color:#fff; font-weight:700; }
+
+    /* Footer */
+    footer {
+      background-color:#121212;
+      color:#f5c77a;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+      border-top:1px solid rgba(245,199,122,0.3);
+      font-weight:600;
+    }
   </style>
 </head>
 <body>
@@ -102,6 +108,11 @@
   <div class="container my-4">
     {% block content %}{% endblock %}
   </div>
+
+  <!-- 🔧 Footer -->
+  <footer>
+    © 2026 Benson Majawa. All rights reserved.
+  </footer>
 
 </body>
 </html>
