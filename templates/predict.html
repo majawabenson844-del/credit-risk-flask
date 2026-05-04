@@ -10,6 +10,24 @@
   {% endif %}
 
   <form method="POST">
+    <!-- Full Name -->
+    <div class="mb-3">
+      <label class="form-label">Full Name</label>
+      <input type="text" name="full_name" class="form-control" required>
+    </div>
+
+    <!-- ID Number -->
+    <div class="mb-3">
+      <label class="form-label">ID Number</label>
+      <input type="text" name="id_number" class="form-control" required>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="mb-3">
+      <label class="form-label">Phone Number</label>
+      <input type="tel" name="phone_number" class="form-control" required>
+    </div>
+
     <!-- Gender -->
     <div class="mb-3">
       <label class="form-label">Gender</label>
@@ -83,7 +101,7 @@
       <input type="number" name="Loan_amt" class="form-control" min="10" required>
     </div>
 
-    <button type="submit" class="btn btn-warning w-100">✨ Predict Across All Models</button>
+    <button type="submit" class="btn btn-warning w-100">✨ Predict & Save</button>
   </form>
 
   {% if results %}
@@ -130,6 +148,8 @@
         <p class="fw-bold">{{ summary }}</p>
       </div>
     </div>
+
+    <a href="/history" class="btn btn-secondary mt-3">📜 View History</a>
   {% endif %}
 </div>
 
