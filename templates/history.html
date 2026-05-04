@@ -11,6 +11,7 @@
           <th>ID Number</th>
           <th>Phone Number</th>
           <th>Prediction Summary</th>
+          <th>Overall Decision</th>
           <th>Timestamp</th>
         </tr>
       </thead>
@@ -21,7 +22,16 @@
           <td>{{ row[1] }}</td>
           <td>{{ row[2] }}</td>
           <td>{{ row[3] }}</td>
-          <td>{{ row[4] }}</td>
+          <td>
+            {% if row[4] == "Approved (Majority)" %}
+              <span class="badge bg-success">{{ row[4] }}</span>
+            {% elif row[4] == "Rejected (Majority)" %}
+              <span class="badge bg-danger">{{ row[4] }}</span>
+            {% else %}
+              <span class="badge bg-secondary">{{ row[4] }}</span>
+            {% endif %}
+          </td>
+          <td>{{ row[5] }}</td>
         </tr>
         {% endfor %}
       </tbody>
