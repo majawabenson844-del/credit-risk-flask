@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>📘 Feature Guide</h2>
+  {% if data is not none and not data.empty %}
+    {% for col in ['Gender','Age','Marital_Status','Employment','Residence','Home_Ownership','Number_Dependents','Loan_Amount'] %}
+      <h4>{{ col }}</h4>
+      {% if col in data.columns %}
+        <p>Possible values: {{ data[col].unique().tolist() }}</p>
+      {% else %}
+        <p>Column '{{ col }}' not found in dataset.</p>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <p class="text-warning">Dataset not available. Check combined_solar_dataset.csv.</p>
+  {% endif %}
+</div>
+{% endblock %}

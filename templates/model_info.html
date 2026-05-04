@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>🧠 Model Information</h2>
+  <p><strong>Models:</strong><br>
+    • Support Vector Machine (SVM)<br>
+    • Random Forest<br>
+    • Ensemble (VotingClassifier)
+  </p>
+  <p><strong>Feature Selection:</strong> Boruta<br>
+     <strong>Scaling:</strong> StandardScaler<br>
+     <strong>Encoding:</strong> OrdinalEncoder</p>
+
+  <h3>Important Predictors:</h3>
+  <ul>
+    <li>Gender</li>
+    <li>Age</li>
+    <li>Marital_Status</li>
+    <li>Employment</li>
+    <li>Residence</li>
+    <li>Home_Ownership</li>
+    <li>Number_Dependents</li>
+    <li>Loan_Amount</li>
+  </ul>
+</div>
+{% endblock %}

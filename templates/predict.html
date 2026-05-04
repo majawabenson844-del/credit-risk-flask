@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow-lg p-4">
+  <h2 class="fw-bold text-primary">🔮 Credit Risk Assessment</h2>
+
+  {% if error %}
+    <div class="alert alert-danger text-center fw-bold">
+      {{ error }}
+    </div>
+  {% endif %}
+
+  <form method="POST">
+    <!-- Gender -->
+    <div class="mb-3">
+      <label class="form-label">Gender</label>
+      <select name="Gender" class="form-select" required>
+        <option value="" disabled selected>Select Gender</option>
+        {% for g in gender_options %}
+          <option>{{ g }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Age -->
+    <div class="mb-3">
+      <label class="form-label">Age</label>
+      <input type="number" name="Age" class="form-control" min="18" required>
+    </div>
+
+    <!-- Marital Status -->
+    <div class="mb-3">
+      <label class="form-label">Marital Status</label>
+      <select name="Marital_Status" class="form-select" required>
+        <option value="" disabled selected>Select Marital Status</option>
+        {% for m in marital_options %}
+          <option>{{ m }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Employment Status -->
+    <div class="mb-3">
+      <label class="form-label">Employment Status</label>
+      <select id="employment" name="Employment_Status" class="form-select" required>
+        <option value="" disabled selected>Select Employment Status</option>
+        {% for e in employment_options %}
+          <option>{{ e }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Residence Area -->
+    <div class="mb-3">
+      <label class="form-label">Residence Area</label>
+      <select name="Residence_Area" class="form-select" required>
+        <option value="" disabled selected>Select Residence Area</option>
+        {% for r in residence_options %}
+          <option>{{ r }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Home Ownership -->
+    <div class="mb-3">
+      <label class="form-label">Home Ownership</label>
+      <select id="homeOwnership" name="Home_Ownership" class="form-select" required>
+        <option value="" disabled selected>Select Home Ownership</option>
+        {% for h in home_options %}
+          <option>{{ h }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Number of Dependents -->
+    <div class="mb-3">
+      <label class="form-label">Number of Dependents</label>
+      <input type="number" name="Number_of_Dependants" class="form-control" min="0" required>
+    </div>
+
+    <!-- Loan Amount -->
+    <div class="mb-3">
+      <label class="form-label">Loan Amount</label>
+      <input type="number" name="Loan_amt" class="form-control" min="10" required>
+    </div>
+
+    <button type="submit" class="btn btn-warning w-100">✨ Predict Across All Models</button>
+  </form>
+
+  {% if results %}
+    <hr>
+    {% for model, res in results.items() %}
+      <div class="card mb-3">
+        <div class="card-header fw-bold">{{ model }}</div>
+        <div class="card-body">
+          {% if res.prediction == 1 %}
+            <div class="alert alert-success text-center fw-bold">
+              ✅ Loan Approved (High Potential)
+            </div>
+          {% else %}
+            <div class="alert alert-danger text-center fw-bold">
+              ❌ Loan Rejected (Low Potential)
+            </div>
+          {% endif %}
+          <div class="row mt-2">
+            <div class="col-md-6">
+              <div class="card text-center bg-light">
+                <div class="card-body">
+                  <h6 class="card-title">Approval Confidence</h6>
+                  <p class="fw-bold">{{ res.probs[1]*100|round(2) }}%</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card text-center bg-light">
+                <div class="card-body">
+                  <h6 class="card-title">Rejection Confidence</h6>
+                  <p class="fw-bold">{{ res.probs[0]*100|round(2) }}%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    <!-- Consensus Summary -->
+    <div class="card mt-4 border-primary">
+      <div class="card-body text-center">
+        <h5 class="card-title text-primary">Consensus Summary</h5>
+        <p class="fw-bold">{{ summary }}</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<!-- 🔧 JavaScript for conditional dropdown -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const employmentSelect = document.getElementById("employment");
+  const homeSelect = document.getElementById("homeOwnership");
+
+  employmentSelect.addEventListener("change", function() {
+    const selectedEmployment = employmentSelect.value;
+
+    for (let i = 0; i < homeSelect.options.length; i++) {
+      const option = homeSelect.options[i];
+      if (option.value === "Employer") {
+        option.hidden = (selectedEmployment === "Self Employed");
+      } else {
+        option.hidden = false; // reset others
+      }
+    }
+  });
+});
+</script>
+{% endblock %}
