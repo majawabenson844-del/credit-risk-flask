@@ -1,3 +1,4 @@
+--only-binary=:all:
 Flask==3.0.2
 pandas==2.2.2
 scikit-learn==1.4.2
