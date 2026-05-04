@@ -41,6 +41,7 @@ def init_db():
                     id_number TEXT,
                     phone_number TEXT,
                     prediction_summary TEXT,
+                    overall_decision TEXT,
                     timestamp TEXT
                 )''')
     conn.commit()
@@ -132,38 +133,45 @@ def predict():
 
         # 🔀 Predict across all models
         results = {}
-        approvals = 0
-        rejections = 0
+        predictions = []
 
         if model_svm:
             pred = model_svm.predict(scaled)[0]
             probs = model_svm.predict_proba(scaled)[0]
             results["SVM"] = {"prediction": pred, "probs": probs}
-            approvals += (pred == 1)
-            rejections += (pred == 0)
+            predictions.append(pred)
 
         if model_rf:
             pred = model_rf.predict(scaled)[0]
             probs = model_rf.predict_proba(scaled)[0]
             results["Random Forest"] = {"prediction": pred, "probs": probs}
-            approvals += (pred == 1)
-            rejections += (pred == 0)
+            predictions.append(pred)
 
         if model_ensemble:
             pred = model_ensemble.predict(scaled)[0]
             probs = model_ensemble.predict_proba(scaled)[0]
             results["Ensemble"] = {"prediction": pred, "probs": probs}
-            approvals += (pred == 1)
-            rejections += (pred == 0)
+            predictions.append(pred)
+
+        # ✅ Majority voting
+        approvals = predictions.count(1)
+        rejections = predictions.count(0)
+
+        if approvals >= 2:
+            overall_decision = "Approved (Majority)"
+        elif rejections >= 2:
+            overall_decision = "Rejected (Majority)"
+        else:
+            overall_decision = "Tie — No clear majority"
 
         # Build summary
-        summary = f"{approvals} model(s) approved, {rejections} model(s) rejected."
+        summary = f"{approvals} model(s) approved, {rejections} model(s) rejected. Overall Decision: {overall_decision}"
 
         # Save to history
         conn = sqlite3.connect("history.db")
         c = conn.cursor()
-        c.execute("INSERT INTO predictions (full_name, id_number, phone_number, prediction_summary, timestamp) VALUES (?, ?, ?, ?, ?)",
-                  (full_name, id_number, phone_number, summary, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        c.execute("INSERT INTO predictions (full_name, id_number, phone_number, prediction_summary, overall_decision, timestamp) VALUES (?, ?, ?, ?, ?, ?)",
+                  (full_name, id_number, phone_number, summary, overall_decision, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
         conn.commit()
         conn.close()
 
@@ -188,7 +196,7 @@ def predict():
 def history():
     conn = sqlite3.connect("history.db")
     c = conn.cursor()
-    c.execute("SELECT full_name, id_number, phone_number, prediction_summary, timestamp FROM predictions ORDER BY timestamp DESC")
+    c.execute("SELECT full_name, id_number, phone_number, prediction_summary, overall_decision, timestamp FROM predictions ORDER BY timestamp DESC")
     rows = c.fetchall()
     conn.close()
     return render_template("history.html", title="History", rows=rows)
