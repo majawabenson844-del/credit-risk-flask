@@ -67,6 +67,7 @@ def predict():
         try:
             age = int(request.form.get("Age"))
             loan_amount = int(request.form.get("Loan_amt"))
+            monthly_income = int(request.form.get("Monthly_Income"))  # NEW FIELD
             gender = request.form.get("Gender")
             marital = request.form.get("Marital_Status")
             employment = request.form.get("Employment_Status")
@@ -109,7 +110,8 @@ def predict():
             "Residence_Area": residence,
             "Home_Ownership": home,
             "Number_of_Dependants": dependents,
-            "Loan amt": loan_amount
+            "Loan amt": loan_amount,
+            "Monthly_Income": monthly_income   # NEW FIELD
         }])
 
         # 🔧 Rename to match training feature names
@@ -122,10 +124,10 @@ def predict():
 
         # Encode + scale
         categorical_cols = ['Gender','Marital_Status','Employment','Residence','Home_Ownership']
-        continuous_cols = ['Age','Number_Dependents','Loan_Amount']
+        continuous_cols = ['Age','Number_Dependents','Loan_Amount','Monthly_Income']  # include new variable
 
         encoded_cat = encoder.transform(input_df[categorical_cols])
-        encoded_df = pd.DataFrame(encoded_cat, columns=categorical_cols)
+        encoded_df = pd.DataFrame(encoded_cat)
         cont_df = input_df[continuous_cols].astype(float)
         final_df = pd.concat([encoded_df, cont_df], axis=1)
 
@@ -170,48 +172,4 @@ def predict():
         # Save to history
         conn = sqlite3.connect("history.db")
         c = conn.cursor()
-        c.execute("INSERT INTO predictions (full_name, id_number, phone_number, prediction_summary, overall_decision, timestamp) VALUES (?, ?, ?, ?, ?, ?)",
-                  (full_name, id_number, phone_number, summary, overall_decision, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-        conn.commit()
-        conn.close()
-
-        return render_template("predict.html", title="Predict",
-                               results=results, summary=summary,
-                               full_name=full_name,
-                               gender_options=data["Gender"].unique().tolist(),
-                               marital_options=data["Marital_Status"].unique().tolist(),
-                               employment_options=data["Employment_Status"].unique().tolist(),
-                               residence_options=data["Residence_Area"].unique().tolist(),
-                               home_options=data["Home_Ownership"].unique().tolist())
-
-    # GET request → show form with dropdowns
-    return render_template("predict.html", title="Predict",
-                           gender_options=data["Gender"].unique().tolist(),
-                           marital_options=data["Marital_Status"].unique().tolist(),
-                           employment_options=data["Employment_Status"].unique().tolist(),
-                           residence_options=data["Residence_Area"].unique().tolist(),
-                           home_options=data["Home_Ownership"].unique().tolist())
-
-@app.route("/history")
-def history():
-    conn = sqlite3.connect("history.db")
-    c = conn.cursor()
-    c.execute("SELECT full_name, id_number, phone_number, prediction_summary, overall_decision, timestamp FROM predictions ORDER BY timestamp DESC")
-    rows = c.fetchall()
-    conn.close()
-    return render_template("history.html", title="History", rows=rows)
-
-@app.route("/model-info")
-def model_info():
-    return render_template("model_info.html", title="Model Info")
-
-@app.route("/feature-guide")
-def feature_guide():
-    return render_template("feature_guide.html", title="Feature Guide", data=data)
-
-@app.route("/about")
-def about():
-    return render_template("about.html", title="About")
-
-if __name__ == "__main__":
-    app.run(debug=True, port=8080)
+        c.execute("INSERT INTO predictions (
