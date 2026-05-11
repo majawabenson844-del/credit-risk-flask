@@ -40,6 +40,7 @@ def init_db():
                     full_name TEXT,
                     id_number TEXT,
                     phone_number TEXT,
+                    monthly_income TEXT,
                     prediction_summary TEXT,
                     overall_decision TEXT,
                     timestamp TEXT
@@ -124,7 +125,7 @@ def predict():
 
         # Encode + scale
         categorical_cols = ['Gender','Marital_Status','Employment','Residence','Home_Ownership']
-        continuous_cols = ['Age','Number_Dependents','Loan_Amount','Monthly_Income']  # include new variable
+        continuous_cols = ['Age','Number_Dependents','Loan_Amount','Monthly_Income']
 
         encoded_cat = encoder.transform(input_df[categorical_cols])
         encoded_df = pd.DataFrame(encoded_cat)
@@ -169,7 +170,54 @@ def predict():
         # Build summary
         summary = f"{approvals} model(s) approved, {rejections} model(s) rejected. Overall Decision: {overall_decision}"
 
-        # Save to history
+        # Save to history (SQL fixed and Monthly Income included)
         conn = sqlite3.connect("history.db")
         c = conn.cursor()
-        c.execute("INSERT INTO predictions (
+        c.execute(
+            "INSERT INTO predictions (full_name, id_number, phone_number, monthly_income, prediction_summary, overall_decision, timestamp) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?)",
+            (full_name, id_number, phone_number, str(monthly_income), summary, overall_decision, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        )
+        conn.commit()
+        conn.close()
+
+        return render_template("predict.html", title="Predict",
+                               results=results, summary=summary,
+                               full_name=full_name,
+                               gender_options=data["Gender"].unique().tolist(),
+                               marital_options=data["Marital_Status"].unique().tolist(),
+                               employment_options=data["Employment_Status"].unique().tolist(),
+                               residence_options=data["Residence_Area"].unique().tolist(),
+                               home_options=data["Home_Ownership"].unique().tolist())
+
+    # GET request → show form with dropdowns
+    return render_template("predict.html", title="Predict",
+                           gender_options=data["Gender"].unique().tolist(),
+                           marital_options=data["Marital_Status"].unique().tolist(),
+                           employment_options=data["Employment_Status"].unique().tolist(),
+                           residence_options=data["Residence_Area"].unique().tolist(),
+                           home_options=data["Home_Ownership"].unique().tolist())
+
+@app.route("/history")
+def history():
+    conn = sqlite3.connect("history.db")
+    c = conn.cursor()
+    c.execute("SELECT full_name, id_number, phone_number, monthly_income, prediction_summary, overall_decision, timestamp FROM predictions ORDER BY timestamp DESC")
+    rows = c.fetchall()
+    conn.close()
+    return render_template("history.html", title="History", rows=rows)
+
+@app.route("/model-info")
+def model_info():
+    return render_template("model_info.html", title="Model Info")
+
+@app.route("/feature-guide")
+def feature_guide():
+    return render_template("feature_guide.html", title="Feature Guide", data=data)
+
+@app.route("/about")
+def about():
+    return render_template("about.html", title="About")
+
+if __name__ == "__main__":
+    app.run(debug=True, port=8080)
