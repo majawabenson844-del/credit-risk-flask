@@ -1,312 +1,312 @@
-Gender,Age,Marital_Status,Employment_Status,Residence_Area,Home_Ownership,Number_of_Dependants,Loan amt,Decision,Monthly_Income
-Male,57,Married,Employed,Low Density,Employer,3,40,1,372
-Male,50,Widowed,Self Employed,High Density,Relative/Guardian,3,12,0,1365
-Male,41,Widowed,Employed,Medium Density,Relative/Guardian,1,30,0,256
-Male,39,Single,Employed,Medium Density,Own,0,70,1,211
-Male,36,Married,Employed,Low Density,Own,3,30,1,108
-Male,21,Married,Employed,Low Density,Tenant,0,30,1,549
-Male,50,Single,Self Employed,High Density,Relative/Guardian,2,30,0,261
-Male,46,Married,Employed,Medium Density,Relative/Guardian,6,70,0,1165
-Male,46,Married,Self Employed,High Density,Relative/Guardian,6,12,0,473
-Female,45,Married,Employed,Low Density,Own,0,30,1,407
-Male,29,Widowed,Self Employed,Medium Density,Relative/Guardian,3,30,0,383
-Male,64,Widowed,Self Employed,Medium Density,Own,0,70,1,377
-Female,28,Widowed,Self Employed,Medium Density,Relative/Guardian,6,12,0,208
-Male,63,Single,Self Employed,Medium Density,Employer,1,165,1,470
-Male,24,Married,Self Employed,Medium Density,Employer,2,165,1,399
-Male,58,Married,Self Employed,Low Density,Relative/Guardian,0,30,0,725
-Female,36,Widowed,Employed,Medium Density,Relative/Guardian,5,165,0,188
-Female,58,Married,Self Employed,Medium Density,Tenant,4,165,0,567
-Male,63,Single,Employed,Low Density,Own,6,30,1,969
-Female,63,Widowed,Employed,High Density,Own,4,30,1,349
-Male,34,Married,Self Employed,Medium Density,Own,0,70,1,235
-Male,49,Single,Employed,Low Density,Relative/Guardian,4,70,1,385
-Female,30,Widowed,Employed,Medium Density,Employer,2,30,1,420
-Female,32,Married,Employed,Medium Density,Relative/Guardian,4,12,0,731
-Male,44,Married,Self Employed,Medium Density,Relative/Guardian,4,30,0,224
-Female,42,Married,Employed,Medium Density,Employer,1,30,1,476
-Male,62,Single,Employed,High Density,Own,3,30,1,474
-Male,64,Married,Employed,Low Density,Relative/Guardian,0,30,1,402
-Female,29,Widowed,Employed,Low Density,Own,3,40,1,208
-Male,30,Married,Self Employed,Medium Density,Relative/Guardian,4,165,0,474
-Female,39,Married,Self Employed,Medium Density,Tenant,4,165,0,461
-Male,53,Widowed,Self Employed,Low Density,Employer,5,30,1,457
-Male,23,Married,Employed,Medium Density,Own,2,165,1,378
-Male,30,Single,Employed,Low Density,Own,1,165,1,494
-Female,33,Single,Self Employed,High Density,Relative/Guardian,0,165,0,305
-Male,53,Married,Self Employed,Medium Density,Relative/Guardian,1,30,0,227
-Female,24,Single,Self Employed,Low Density,Relative/Guardian,0,70,0,517
-Female,46,Widowed,Employed,Low Density,Own,2,40,1,495
-Male,58,Widowed,Employed,Low Density,Tenant,4,165,1,813
-Female,53,Married,Self Employed,High Density,Tenant,5,165,0,299
-Female,63,Married,Employed,High Density,Tenant,6,12,0,1394
-Female,35,Widowed,Self Employed,Medium Density,Own,1,70,1,234
-Female,45,Single,Employed,Low Density,Tenant,3,30,1,731
-Male,22,Married,Employed,Medium Density,Relative/Guardian,3,70,0,468
-Male,29,Married,Employed,Low Density,Employer,4,70,1,819
-Female,28,Married,Self Employed,Low Density,Relative/Guardian,1,195,1,344
-Male,45,Married,Employed,Low Density,Relative/Guardian,3,30,1,220
-Female,20,Widowed,Self Employed,High Density,Tenant,1,40,0,426
-Male,45,Married,Self Employed,Low Density,Employer,1,165,1,514
-Male,48,Married,Employed,Low Density,Own,0,30,1,587
-Male,33,Widowed,Employed,Low Density,Tenant,1,70,1,202
-Female,29,Single,Employed,Low Density,Employer,5,40,0,427
-Female,52,Single,Employed,Low Density,Employer,0,30,1,1214
-Female,61,Single,Self Employed,High Density,Relative/Guardian,2,165,0,273
-Male,24,Widowed,Employed,Low Density,Own,4,70,1,120
-Female,21,Married,Employed,Medium Density,Employer,4,165,1,579
-Female,44,Widowed,Employed,Low Density,Own,0,30,1,821
-Male,30,Single,Self Employed,Medium Density,Relative/Guardian,5,70,0,441
-Male,27,Single,Employed,Low Density,Employer,6,30,1,227
-Female,37,Married,Employed,Low Density,Relative/Guardian,0,40,1,269
-Female,46,Single,Self Employed,Low Density,Tenant,2,165,0,375
-Female,62,Single,Employed,Medium Density,Tenant,5,70,0,495
-Male,52,Married,Employed,Low Density,Employer,3,40,1,1017
-Female,60,Widowed,Self Employed,Low Density,Own,2,165,1,254
-Female,24,Married,Employed,High Density,Employer,6,30,0,234
-Female,49,Single,Employed,Medium Density,Employer,4,30,1,355
-Female,24,Single,Self Employed,Low Density,Tenant,6,12,0,231
-Female,24,Married,Self Employed,Low Density,Relative/Guardian,2,30,0,461
-Male,40,Single,Self Employed,Low Density,Employer,3,30,1,331
-Female,53,Single,Self Employed,Medium Density,Relative/Guardian,1,12,1,248
-Female,41,Married,Self Employed,Medium Density,Relative/Guardian,0,70,0,328
-Female,53,Widowed,Employed,Low Density,Employer,1,40,1,477
-Female,60,Single,Employed,Medium Density,Employer,4,30,0,423
-Male,26,Single,Self Employed,High Density,Tenant,4,30,0,299
-Male,48,Widowed,Employed,Low Density,Relative/Guardian,5,165,1,819
-Male,42,Single,Employed,High Density,Own,3,30,1,505
-Male,23,Widowed,Self Employed,High Density,Own,3,30,1,453
-Male,36,Widowed,Self Employed,Low Density,Employer,4,70,1,89
-Male,41,Single,Self Employed,Medium Density,Relative/Guardian,5,70,0,208
-Female,27,Widowed,Employed,Medium Density,Own,0,12,1,1266
-Female,21,Married,Employed,Low Density,Own,1,70,1,276
-Male,48,Single,Self Employed,High Density,Tenant,5,30,0,221
-Male,56,Married,Self Employed,High Density,Own,3,70,0,429
-Female,47,Widowed,Self Employed,Medium Density,Relative/Guardian,4,30,0,811
-Male,31,Single,Self Employed,High Density,Tenant,0,195,0,543
-Female,30,Single,Employed,Low Density,Own,2,165,1,345
-Female,65,Widowed,Employed,Low Density,Employer,3,30,1,404
-Female,43,Widowed,Employed,Medium Density,Own,1,165,1,235
-Female,31,Married,Employed,Medium Density,Relative/Guardian,4,165,1,319
-Female,56,Widowed,Employed,High Density,Relative/Guardian,0,165,0,535
-Male,36,Single,Self Employed,Medium Density,Own,4,70,1,328
-Male,43,Married,Employed,Low Density,Employer,0,40,1,363
-Male,21,Married,Employed,Medium Density,Employer,0,12,1,193
-Male,39,Widowed,Employed,Low Density,Tenant,5,30,1,182
-Male,61,Widowed,Employed,Medium Density,Relative/Guardian,1,70,1,400
-Male,31,Single,Self Employed,Medium Density,Relative/Guardian,3,40,0,457
-Male,45,Single,Employed,Low Density,Own,0,30,1,423
-Male,47,Married,Employed,Medium Density,Own,4,30,1,387
-Female,43,Widowed,Employed,Low Density,Tenant,4,70,1,1238
-Male,32,Married,Employed,Medium Density,Relative/Guardian,5,135,1,426
-Male,36,Widowed,Employed,Low Density,Employer,3,70,1,263
-Male,52,Married,Employed,High Density,Employer,6,12,1,272
-Female,46,Married,Employed,Low Density,Employer,2,30,1,438
-Male,29,Single,Employed,Low Density,Own,2,30,1,1084
-Male,23,Single,Self Employed,High Density,Tenant,5,30,0,300
-Male,50,Widowed,Self Employed,Medium Density,Own,4,30,1,229
-Female,53,Married,Employed,High Density,Own,4,165,1,555
-Female,50,Married,Employed,Low Density,Employer,2,30,1,488
-Male,53,Married,Employed,High Density,Own,0,30,1,962
-Female,53,Widowed,Employed,Low Density,Own,2,195,1,368
-Female,33,Married,Self Employed,Medium Density,Tenant,2,30,0,939
-Female,47,Married,Employed,Low Density,Employer,0,135,1,481
-Male,38,Widowed,Employed,Medium Density,Own,3,70,1,324
-Male,44,Married,Self Employed,Low Density,Employer,2,70,1,493
-Male,33,Widowed,Self Employed,High Density,Relative/Guardian,5,30,0,205
-Male,27,Married,Employed,High Density,Employer,2,30,1,256
-Male,31,Married,Employed,Medium Density,Employer,3,195,1,577
-Female,46,Single,Employed,Low Density,Employer,5,30,1,463
-Male,23,Married,Employed,Low Density,Employer,4,165,1,906
-Male,32,Married,Self Employed,High Density,Tenant,4,12,0,506
-Female,53,Married,Self Employed,Low Density,Own,3,30,0,319
-Male,65,Single,Employed,Low Density,Employer,6,30,1,186
-Male,23,Married,Employed,Low Density,Tenant,3,40,1,500
-Male,20,Married,Employed,Low Density,Own,3,30,1,281
-Male,35,Widowed,Self Employed,Medium Density,Tenant,2,40,1,89
-Male,57,Married,Self Employed,High Density,Relative/Guardian,6,30,0,223
-Male,36,Single,Self Employed,High Density,Relative/Guardian,5,30,0,168
-Male,43,Married,Self Employed,High Density,Relative/Guardian,3,195,0,274
-Female,43,Single,Self Employed,High Density,Tenant,3,165,0,557
-Female,63,Married,Employed,Low Density,Employer,0,12,1,408
-Female,22,Married,Employed,High Density,Relative/Guardian,1,30,0,453
-Male,40,Married,Employed,Medium Density,Relative/Guardian,6,30,0,988
-Male,27,Single,Self Employed,High Density,Relative/Guardian,0,30,0,444
-Female,58,Married,Self Employed,Low Density,Own,3,30,1,272
-Female,54,Widowed,Employed,High Density,Tenant,1,30,0,252
-Female,43,Widowed,Self Employed,Medium Density,Tenant,6,12,0,218
-Female,28,Married,Self Employed,High Density,Relative/Guardian,3,30,0,979
-Female,24,Married,Employed,Medium Density,Own,1,12,1,61
-Female,58,Single,Self Employed,High Density,Relative/Guardian,3,30,0,337
-Female,48,Widowed,Employed,Low Density,Own,3,165,1,244
-Female,20,Widowed,Self Employed,Low Density,Tenant,4,12,0,291
-Male,62,Widowed,Self Employed,Medium Density,Own,1,30,0,377
-Female,20,Widowed,Self Employed,Medium Density,Employer,0,40,1,473
-Male,54,Single,Employed,Medium Density,Tenant,6,30,0,235
-Female,21,Single,Employed,High Density,Relative/Guardian,3,30,0,255
-Female,42,Married,Self Employed,Medium Density,Tenant,6,30,0,421
-Male,47,Widowed,Employed,High Density,Relative/Guardian,2,195,1,275
-Female,63,Married,Employed,Low Density,Employer,4,165,1,450
-Female,34,Widowed,Self Employed,Medium Density,Relative/Guardian,4,70,0,243
-Female,48,Single,Self Employed,Low Density,Relative/Guardian,6,30,1,492
-Male,35,Married,Self Employed,Medium Density,Employer,0,30,1,446
-Male,30,Single,Employed,Low Density,Employer,5,30,1,419
-Male,61,Widowed,Employed,Low Density,Own,0,30,1,295
-Female,36,Single,Self Employed,Low Density,Own,0,40,1,510
-Male,37,Widowed,Self Employed,High Density,Relative/Guardian,3,40,0,200
-Female,49,Married,Self Employed,Low Density,Relative/Guardian,6,70,0,289
-Female,21,Single,Self Employed,High Density,Tenant,5,195,0,323
-Female,44,Single,Self Employed,High Density,Relative/Guardian,2,30,0,353
-Female,62,Married,Employed,High Density,Tenant,5,135,0,447
-Male,36,Single,Employed,Medium Density,Own,4,30,1,421
-Male,47,Single,Self Employed,High Density,Relative/Guardian,1,165,0,678
-Male,30,Married,Employed,Medium Density,Own,5,12,1,320
-Male,65,Single,Employed,Low Density,Employer,1,40,1,516
-Female,44,Married,Self Employed,High Density,Relative/Guardian,4,70,0,426
-Male,38,Widowed,Employed,Medium Density,Tenant,6,30,0,239
-Male,37,Widowed,Employed,Medium Density,Relative/Guardian,5,12,1,184
-Male,36,Married,Employed,High Density,Tenant,5,30,0,307
-Male,57,Single,Employed,Low Density,Relative/Guardian,1,195,1,574
-Male,57,Married,Employed,Low Density,Own,0,12,1,486
-Male,37,Married,Self Employed,High Density,Tenant,1,40,0,458
-Female,63,Married,Self Employed,High Density,Relative/Guardian,6,165,0,447
-Female,22,Single,Employed,Medium Density,Employer,4,165,1,511
-Male,21,Single,Self Employed,Medium Density,Own,3,195,0,337
-Male,47,Married,Employed,Low Density,Relative/Guardian,4,30,1,407
-Female,53,Single,Employed,High Density,Employer,5,30,1,239
-Female,61,Married,Self Employed,Low Density,Tenant,4,12,0,249
-Male,51,Married,Self Employed,Medium Density,Relative/Guardian,3,30,0,165
-Female,65,Married,Employed,Low Density,Own,1,195,1,336
-Female,32,Single,Employed,Medium Density,Relative/Guardian,2,12,0,445
-Female,23,Single,Self Employed,Medium Density,Relative/Guardian,4,165,1,209
-Female,46,Married,Self Employed,High Density,Tenant,4,195,0,564
-Male,56,Married,Self Employed,Medium Density,Own,0,70,0,1500
-Female,55,Widowed,Employed,Low Density,Own,3,40,1,337
-Male,38,Married,Employed,Medium Density,Employer,2,30,1,874
-Male,53,Married,Employed,Low Density,Relative/Guardian,6,12,1,737
-Male,63,Married,Employed,Low Density,Employer,0,165,1,461
-Male,45,Single,Self Employed,High Density,Relative/Guardian,5,70,0,529
-Female,28,Widowed,Employed,Low Density,Employer,3,70,1,195
-Female,39,Married,Self Employed,Medium Density,Relative/Guardian,3,70,0,535
-Female,55,Single,Self Employed,Medium Density,Relative/Guardian,3,40,0,250
-Male,60,Single,Self Employed,Low Density,Employer,2,165,1,383
-Male,63,Single,Employed,Low Density,Relative/Guardian,3,12,0,321
-Female,40,Single,Employed,Medium Density,Relative/Guardian,1,30,0,244
-Female,59,Single,Employed,Medium Density,Own,3,70,1,104
-Male,39,Widowed,Employed,Medium Density,Own,2,30,1,301
-Male,21,Widowed,Self Employed,High Density,Relative/Guardian,6,30,1,480
-Male,22,Single,Employed,High Density,Employer,6,30,0,256
-Female,51,Married,Self Employed,Medium Density,Relative/Guardian,4,70,0,438
-Female,47,Married,Self Employed,Low Density,Employer,2,165,1,447
-Female,23,Married,Self Employed,High Density,Tenant,5,40,0,212
-Female,33,Single,Self Employed,High Density,Tenant,4,40,0,309
-Male,54,Married,Self Employed,High Density,Relative/Guardian,6,12,0,198
-Male,55,Single,Self Employed,High Density,Employer,0,70,0,291
-Male,28,Married,Employed,Low Density,Employer,3,70,1,202
-Female,28,Married,Self Employed,High Density,Employer,5,30,0,174
-Female,56,Single,Self Employed,Low Density,Own,3,40,1,349
-Male,40,Widowed,Self Employed,Medium Density,Own,0,30,1,485
-Male,43,Married,Employed,Low Density,Relative/Guardian,4,70,1,113
-Male,38,Widowed,Self Employed,Medium Density,Relative/Guardian,6,30,0,469
-Male,38,Married,Employed,Low Density,Own,1,70,1,518
-Female,31,Married,Employed,Low Density,Own,0,30,1,489
-Female,22,Single,Employed,High Density,Relative/Guardian,4,12,0,361
-Male,23,Single,Self Employed,Medium Density,Own,5,30,1,297
-Male,31,Married,Employed,Low Density,Own,0,70,1,242
-Female,23,Widowed,Employed,High Density,Relative/Guardian,3,30,0,669
-Female,64,Single,Employed,Low Density,Relative/Guardian,3,195,0,178
-Female,46,Married,Self Employed,High Density,Own,6,12,0,358
-Female,54,Married,Self Employed,Medium Density,Relative/Guardian,1,165,1,427
-Female,51,Single,Self Employed,High Density,Own,3,30,0,828
-Male,35,Single,Employed,Low Density,Relative/Guardian,0,30,1,311
-Male,61,Widowed,Employed,Low Density,Own,3,12,1,212
-Male,54,Married,Self Employed,Medium Density,Relative/Guardian,6,165,0,456
-Female,39,Married,Self Employed,High Density,Relative/Guardian,3,165,0,261
-Male,43,Married,Self Employed,High Density,Tenant,6,30,0,214
-Female,44,Single,Self Employed,Medium Density,Relative/Guardian,2,30,0,105
-Female,65,Married,Employed,Low Density,Own,0,165,1,551
-Male,36,Married,Employed,Medium Density,Own,4,70,1,442
-Female,34,Single,Employed,Medium Density,Tenant,6,12,1,274
-Female,29,Widowed,Self Employed,Low Density,Relative/Guardian,5,195,0,260
-Female,36,Widowed,Employed,Medium Density,Own,3,30,1,376
-Male,22,Single,Self Employed,Medium Density,Employer,2,40,0,422
-Male,27,Married,Employed,Medium Density,Employer,4,30,1,406
-Female,63,Widowed,Employed,Low Density,Employer,6,165,0,503
-Male,44,Widowed,Self Employed,Medium Density,Tenant,4,70,0,308
-Female,43,Married,Self Employed,Low Density,Tenant,3,40,0,302
-Male,45,Married,Employed,Low Density,Employer,0,30,1,200
-Female,20,Single,Employed,Low Density,Relative/Guardian,5,70,1,828
-Female,54,Widowed,Employed,Medium Density,Relative/Guardian,3,195,0,1475
-Female,62,Married,Employed,Medium Density,Own,2,165,1,330
-Female,62,Married,Employed,Medium Density,Own,0,70,1,365
-Female,46,Widowed,Employed,Medium Density,Own,2,30,1,262
-Female,25,Single,Employed,Low Density,Employer,2,30,1,181
-Female,49,Widowed,Employed,Medium Density,Own,5,30,1,937
-Male,45,Widowed,Employed,Low Density,Tenant,5,12,0,368
-Female,56,Single,Employed,High Density,Tenant,5,165,0,354
-Male,58,Married,Self Employed,High Density,Tenant,6,30,0,89
-Male,52,Married,Self Employed,Medium Density,Relative/Guardian,3,30,0,351
-Female,63,Married,Employed,Low Density,Own,2,30,1,510
-Male,55,Widowed,Self Employed,Low Density,Employer,1,12,1,543
-Male,55,Married,Self Employed,High Density,Relative/Guardian,3,40,0,400
-Male,47,Widowed,Employed,Low Density,Own,1,30,1,466
-Female,43,Married,Employed,High Density,Tenant,0,12,0,348
-Male,42,Married,Self Employed,High Density,Employer,1,70,1,189
-Male,52,Widowed,Employed,Low Density,Employer,5,30,1,303
-Female,32,Single,Self Employed,High Density,Employer,1,30,1,1042
-Female,36,Widowed,Employed,Medium Density,Employer,3,30,1,231
-Male,39,Single,Employed,Low Density,Own,1,70,1,304
-Male,53,Single,Employed,High Density,Tenant,5,70,0,243
-Female,53,Married,Self Employed,High Density,Relative/Guardian,6,40,0,351
-Female,44,Married,Employed,Medium Density,Employer,0,30,1,362
-Female,42,Single,Employed,High Density,Relative/Guardian,3,12,0,481
-Male,50,Married,Employed,High Density,Relative/Guardian,1,40,0,115
-Male,46,Single,Employed,Medium Density,Employer,1,40,1,424
-Female,31,Single,Employed,High Density,Relative/Guardian,6,30,0,315
-Male,43,Married,Self Employed,Medium Density,Employer,6,30,0,282
-Male,44,Married,Employed,High Density,Relative/Guardian,4,30,0,196
-Female,46,Single,Employed,High Density,Own,0,30,1,292
-Male,51,Single,Employed,Low Density,Own,6,30,1,362
-Male,27,Widowed,Employed,Low Density,Employer,0,30,1,223
-Female,52,Married,Employed,Low Density,Employer,1,30,1,436
-Female,43,Married,Self Employed,Medium Density,Relative/Guardian,0,70,0,380
-Female,65,Married,Self Employed,High Density,Relative/Guardian,6,30,0,382
-Male,42,Single,Employed,Low Density,Relative/Guardian,1,165,1,264
-Female,58,Married,Employed,Low Density,Own,1,70,1,514
-Male,24,Single,Employed,Low Density,Relative/Guardian,1,30,1,492
-Male,57,Married,Self Employed,High Density,Relative/Guardian,4,70,0,359
-Male,46,Married,Employed,Low Density,Employer,2,165,1,274
-Male,41,Married,Self Employed,High Density,Tenant,5,70,0,213
-Male,26,Married,Self Employed,High Density,Tenant,4,30,0,289
-Male,49,Single,Self Employed,High Density,Own,4,70,0,460
-Male,31,Single,Self Employed,Low Density,Own,6,70,1,342
-Female,45,Married,Self Employed,Medium Density,Relative/Guardian,1,165,0,287
-Female,61,Widowed,Employed,High Density,Employer,4,30,1,223
-Male,27,Married,Employed,Low Density,Employer,2,30,1,501
-Female,60,Widowed,Self Employed,High Density,Tenant,0,195,0,620
-Female,40,Married,Self Employed,High Density,Employer,5,30,0,292
-Male,51,Widowed,Employed,Low Density,Tenant,1,30,1,280
-Female,29,Married,Self Employed,Medium Density,Tenant,1,165,0,548
-Female,25,Married,Employed,Low Density,Relative/Guardian,1,70,1,450
-Male,27,Married,Employed,Low Density,Own,2,30,1,158
-Female,57,Single,Self Employed,Medium Density,Employer,1,70,1,128
-Male,54,Married,Self Employed,Medium Density,Relative/Guardian,5,30,0,350
-Female,34,Widowed,Employed,High Density,Own,0,30,1,203
-Female,63,Married,Employed,High Density,Tenant,5,40,0,259
-Male,58,Widowed,Self Employed,High Density,Relative/Guardian,6,12,0,472
-Male,54,Single,Employed,High Density,Tenant,3,135,0,492
-Male,34,Married,Self Employed,High Density,Relative/Guardian,3,30,0,1355
-Female,63,Married,Employed,Low Density,Tenant,3,30,1,212
-Female,39,Widowed,Self Employed,Medium Density,Relative/Guardian,2,165,0,551
-Male,48,Single,Employed,Low Density,Employer,3,165,1,528
-Female,53,Married,Self Employed,Medium Density,Tenant,3,165,0,377
-Male,44,Married,Employed,Low Density,Employer,1,30,1,388
-Male,60,Widowed,Employed,Low Density,Own,6,195,1,897
-Female,28,Widowed,Employed,Low Density,Own,4,165,1,295
-Male,28,Married,Self Employed,High Density,Employer,6,30,0,273
-Female,52,Single,Self Employed,High Density,Relative/Guardian,3,30,0,584
-Male,32,Married,Employed,Low Density,Tenant,5,70,0,464
-Female,40,Married,Employed,Low Density,Tenant,0,30,1,730
-Male,65,Single,Self Employed,Low Density,Own,1,70,1,248
-Female,61,Married,Employed,Low Density,Own,0,30,1,462
-Female,51,Married,Employed,Medium Density,Employer,6,30,1,499
+Gender,Age,Marital_Status,Employment_Status,Residence_Area,Home_Ownership,Number_of_Dependants,Loan amt,Decision
+Male,57,Married,Employed,Low Density,Employer,3,40,1
+Male,50,Widowed,Self Employed,High Density,Relative/Guardian,3,12,0
+Male,41,Widowed,Employed,Medium Density,Relative/Guardian,1,30,0
+Male,39,Single,Employed,Medium Density,Own,0,70,1
+Male,36,Married,Employed,Low Density,Own,3,30,1
+Male,21,Married,Employed,Low Density,Tenant,0,30,1
+Male,50,Single,Self Employed,High Density,Relative/Guardian,2,30,0
+Male,46,Married,Employed,Medium Density,Relative/Guardian,6,70,0
+Male,46,Married,Self Employed,High Density,Relative/Guardian,6,12,0
+Female,45,Married,Employed,Low Density,Own,0,30,1
+Male,29,Widowed,Self Employed,Medium Density,Relative/Guardian,3,30,0
+Male,64,Widowed,Self Employed,Medium Density,Own,0,70,1
+Female,28,Widowed,Self Employed,Medium Density,Relative/Guardian,6,12,0
+Male,63,Single,Self Employed,Medium Density,Employer,1,165,1
+Male,24,Married,Self Employed,Medium Density,Employer,2,165,1
+Male,58,Married,Self Employed,Low Density,Relative/Guardian,0,30,0
+Female,36,Widowed,Employed,Medium Density,Relative/Guardian,5,165,0
+Female,58,Married,Self Employed,Medium Density,Tenant,4,165,0
+Male,63,Single,Employed,Low Density,Own,6,30,1
+Female,63,Widowed,Employed,High Density,Own,4,30,1
+Male,34,Married,Self Employed,Medium Density,Own,0,70,1
+Male,49,Single,Employed,Low Density,Relative/Guardian,4,70,1
+Female,30,Widowed,Employed,Medium Density,Employer,2,30,1
+Female,32,Married,Employed,Medium Density,Relative/Guardian,4,12,0
+Male,44,Married,Self Employed,Medium Density,Relative/Guardian,4,30,0
+Female,42,Married,Employed,Medium Density,Employer,1,30,1
+Male,62,Single,Employed,High Density,Own,3,30,1
+Male,64,Married,Employed,Low Density,Relative/Guardian,0,30,1
+Female,29,Widowed,Employed,Low Density,Own,3,40,1
+Male,30,Married,Self Employed,Medium Density,Relative/Guardian,4,165,0
+Female,39,Married,Self Employed,Medium Density,Tenant,4,165,0
+Male,53,Widowed,Self Employed,Low Density,Employer,5,30,1
+Male,23,Married,Employed,Medium Density,Own,2,165,1
+Male,30,Single,Employed,Low Density,Own,1,165,1
+Female,33,Single,Self Employed,High Density,Relative/Guardian,0,165,0
+Male,53,Married,Self Employed,Medium Density,Relative/Guardian,1,30,0
+Female,24,Single,Self Employed,Low Density,Relative/Guardian,0,70,0
+Female,46,Widowed,Employed,Low Density,Own,2,40,1
+Male,58,Widowed,Employed,Low Density,Tenant,4,165,1
+Female,53,Married,Self Employed,High Density,Tenant,5,165,0
+Female,63,Married,Employed,High Density,Tenant,6,12,0
+Female,35,Widowed,Self Employed,Medium Density,Own,1,70,1
+Female,45,Single,Employed,Low Density,Tenant,3,30,1
+Male,22,Married,Employed,Medium Density,Relative/Guardian,3,70,0
+Male,29,Married,Employed,Low Density,Employer,4,70,1
+Female,28,Married,Self Employed,Low Density,Relative/Guardian,1,195,1
+Male,45,Married,Employed,Low Density,Relative/Guardian,3,30,1
+Female,20,Widowed,Self Employed,High Density,Tenant,1,40,0
+Male,45,Married,Self Employed,Low Density,Employer,1,165,1
+Male,48,Married,Employed,Low Density,Own,0,30,1
+Male,33,Widowed,Employed,Low Density,Tenant,1,70,1
+Female,29,Single,Employed,Low Density,Employer,5,40,0
+Female,52,Single,Employed,Low Density,Employer,0,30,1
+Female,61,Single,Self Employed,High Density,Relative/Guardian,2,165,0
+Male,24,Widowed,Employed,Low Density,Own,4,70,1
+Female,21,Married,Employed,Medium Density,Employer,4,165,1
+Female,44,Widowed,Employed,Low Density,Own,0,30,1
+Male,30,Single,Self Employed,Medium Density,Relative/Guardian,5,70,0
+Male,27,Single,Employed,Low Density,Employer,6,30,1
+Female,37,Married,Employed,Low Density,Relative/Guardian,0,40,1
+Female,46,Single,Self Employed,Low Density,Tenant,2,165,0
+Female,62,Single,Employed,Medium Density,Tenant,5,70,0
+Male,52,Married,Employed,Low Density,Employer,3,40,1
+Female,60,Widowed,Self Employed,Low Density,Own,2,165,1
+Female,24,Married,Employed,High Density,Employer,6,30,0
+Female,49,Single,Employed,Medium Density,Employer,4,30,1
+Female,24,Single,Self Employed,Low Density,Tenant,6,12,0
+Female,24,Married,Self Employed,Low Density,Relative/Guardian,2,30,0
+Male,40,Single,Self Employed,Low Density,Employer,3,30,1
+Female,53,Single,Self Employed,Medium Density,Relative/Guardian,1,12,1
+Female,41,Married,Self Employed,Medium Density,Relative/Guardian,0,70,0
+Female,53,Widowed,Employed,Low Density,Employer,1,40,1
+Female,60,Single,Employed,Medium Density,Employer,4,30,0
+Male,26,Single,Self Employed,High Density,Tenant,4,30,0
+Male,48,Widowed,Employed,Low Density,Relative/Guardian,5,165,1
+Male,42,Single,Employed,High Density,Own,3,30,1
+Male,23,Widowed,Self Employed,High Density,Own,3,30,1
+Male,36,Widowed,Self Employed,Low Density,Employer,4,70,1
+Male,41,Single,Self Employed,Medium Density,Relative/Guardian,5,70,0
+Female,27,Widowed,Employed,Medium Density,Own,0,12,1
+Female,21,Married,Employed,Low Density,Own,1,70,1
+Male,48,Single,Self Employed,High Density,Tenant,5,30,0
+Male,56,Married,Self Employed,High Density,Own,3,70,0
+Female,47,Widowed,Self Employed,Medium Density,Relative/Guardian,4,30,0
+Male,31,Single,Self Employed,High Density,Tenant,0,195,0
+Female,30,Single,Employed,Low Density,Own,2,165,1
+Female,65,Widowed,Employed,Low Density,Employer,3,30,1
+Female,43,Widowed,Employed,Medium Density,Own,1,165,1
+Female,31,Married,Employed,Medium Density,Relative/Guardian,4,165,1
+Female,56,Widowed,Employed,High Density,Relative/Guardian,0,165,0
+Male,36,Single,Self Employed,Medium Density,Own,4,70,1
+Male,43,Married,Employed,Low Density,Employer,0,40,1
+Male,21,Married,Employed,Medium Density,Employer,0,12,1
+Male,39,Widowed,Employed,Low Density,Tenant,5,30,1
+Male,61,Widowed,Employed,Medium Density,Relative/Guardian,1,70,1
+Male,31,Single,Self Employed,Medium Density,Relative/Guardian,3,40,0
+Male,45,Single,Employed,Low Density,Own,0,30,1
+Male,47,Married,Employed,Medium Density,Own,4,30,1
+Female,43,Widowed,Employed,Low Density,Tenant,4,70,1
+Male,32,Married,Employed,Medium Density,Relative/Guardian,5,135,1
+Male,36,Widowed,Employed,Low Density,Employer,3,70,1
+Male,52,Married,Employed,High Density,Employer,6,12,1
+Female,46,Married,Employed,Low Density,Employer,2,30,1
+Male,29,Single,Employed,Low Density,Own,2,30,1
+Male,23,Single,Self Employed,High Density,Tenant,5,30,0
+Male,50,Widowed,Self Employed,Medium Density,Own,4,30,1
+Female,53,Married,Employed,High Density,Own,4,165,1
+Female,50,Married,Employed,Low Density,Employer,2,30,1
+Male,53,Married,Employed,High Density,Own,0,30,1
+Female,53,Widowed,Employed,Low Density,Own,2,195,1
+Female,33,Married,Self Employed,Medium Density,Tenant,2,30,0
+Female,47,Married,Employed,Low Density,Employer,0,135,1
+Male,38,Widowed,Employed,Medium Density,Own,3,70,1
+Male,44,Married,Self Employed,Low Density,Employer,2,70,1
+Male,33,Widowed,Self Employed,High Density,Relative/Guardian,5,30,0
+Male,27,Married,Employed,High Density,Employer,2,30,1
+Male,31,Married,Employed,Medium Density,Employer,3,195,1
+Female,46,Single,Employed,Low Density,Employer,5,30,1
+Male,23,Married,Employed,Low Density,Employer,4,165,1
+Male,32,Married,Self Employed,High Density,Tenant,4,12,0
+Female,53,Married,Self Employed,Low Density,Own,3,30,0
+Male,65,Single,Employed,Low Density,Employer,6,30,1
+Male,23,Married,Employed,Low Density,Tenant,3,40,1
+Male,20,Married,Employed,Low Density,Own,3,30,1
+Male,35,Widowed,Self Employed,Medium Density,Tenant,2,40,1
+Male,57,Married,Self Employed,High Density,Relative/Guardian,6,30,0
+Male,36,Single,Self Employed,High Density,Relative/Guardian,5,30,0
+Male,43,Married,Self Employed,High Density,Relative/Guardian,3,195,0
+Female,43,Single,Self Employed,High Density,Tenant,3,165,0
+Female,63,Married,Employed,Low Density,Employer,0,12,1
+Female,22,Married,Employed,High Density,Relative/Guardian,1,30,0
+Male,40,Married,Employed,Medium Density,Relative/Guardian,6,30,0
+Male,27,Single,Self Employed,High Density,Relative/Guardian,0,30,0
+Female,58,Married,Self Employed,Low Density,Own,3,30,1
+Female,54,Widowed,Employed,High Density,Tenant,1,30,0
+Female,43,Widowed,Self Employed,Medium Density,Tenant,6,12,0
+Female,28,Married,Self Employed,High Density,Relative/Guardian,3,30,0
+Female,24,Married,Employed,Medium Density,Own,1,12,1
+Female,58,Single,Self Employed,High Density,Relative/Guardian,3,30,0
+Female,48,Widowed,Employed,Low Density,Own,3,165,1
+Female,20,Widowed,Self Employed,Low Density,Tenant,4,12,0
+Male,62,Widowed,Self Employed,Medium Density,Own,1,30,0
+Female,20,Widowed,Self Employed,Medium Density,Employer,0,40,1
+Male,54,Single,Employed,Medium Density,Tenant,6,30,0
+Female,21,Single,Employed,High Density,Relative/Guardian,3,30,0
+Female,42,Married,Self Employed,Medium Density,Tenant,6,30,0
+Male,47,Widowed,Employed,High Density,Relative/Guardian,2,195,1
+Female,63,Married,Employed,Low Density,Employer,4,165,1
+Female,34,Widowed,Self Employed,Medium Density,Relative/Guardian,4,70,0
+Female,48,Single,Self Employed,Low Density,Relative/Guardian,6,30,1
+Male,35,Married,Self Employed,Medium Density,Employer,0,30,1
+Male,30,Single,Employed,Low Density,Employer,5,30,1
+Male,61,Widowed,Employed,Low Density,Own,0,30,1
+Female,36,Single,Self Employed,Low Density,Own,0,40,1
+Male,37,Widowed,Self Employed,High Density,Relative/Guardian,3,40,0
+Female,49,Married,Self Employed,Low Density,Relative/Guardian,6,70,0
+Female,21,Single,Self Employed,High Density,Tenant,5,195,0
+Female,44,Single,Self Employed,High Density,Relative/Guardian,2,30,0
+Female,62,Married,Employed,High Density,Tenant,5,135,0
+Male,36,Single,Employed,Medium Density,Own,4,30,1
+Male,47,Single,Self Employed,High Density,Relative/Guardian,1,165,0
+Male,30,Married,Employed,Medium Density,Own,5,12,1
+Male,65,Single,Employed,Low Density,Employer,1,40,1
+Female,44,Married,Self Employed,High Density,Relative/Guardian,4,70,0
+Male,38,Widowed,Employed,Medium Density,Tenant,6,30,0
+Male,37,Widowed,Employed,Medium Density,Relative/Guardian,5,12,1
+Male,36,Married,Employed,High Density,Tenant,5,30,0
+Male,57,Single,Employed,Low Density,Relative/Guardian,1,195,1
+Male,57,Married,Employed,Low Density,Own,0,12,1
+Male,37,Married,Self Employed,High Density,Tenant,1,40,0
+Female,63,Married,Self Employed,High Density,Relative/Guardian,6,165,0
+Female,22,Single,Employed,Medium Density,Employer,4,165,1
+Male,21,Single,Self Employed,Medium Density,Own,3,195,0
+Male,47,Married,Employed,Low Density,Relative/Guardian,4,30,1
+Female,53,Single,Employed,High Density,Employer,5,30,1
+Female,61,Married,Self Employed,Low Density,Tenant,4,12,0
+Male,51,Married,Self Employed,Medium Density,Relative/Guardian,3,30,0
+Female,65,Married,Employed,Low Density,Own,1,195,1
+Female,32,Single,Employed,Medium Density,Relative/Guardian,2,12,0
+Female,23,Single,Self Employed,Medium Density,Relative/Guardian,4,165,1
+Female,46,Married,Self Employed,High Density,Tenant,4,195,0
+Male,56,Married,Self Employed,Medium Density,Own,0,70,0
+Female,55,Widowed,Employed,Low Density,Own,3,40,1
+Male,38,Married,Employed,Medium Density,Employer,2,30,1
+Male,53,Married,Employed,Low Density,Relative/Guardian,6,12,1
+Male,63,Married,Employed,Low Density,Employer,0,165,1
+Male,45,Single,Self Employed,High Density,Relative/Guardian,5,70,0
+Female,28,Widowed,Employed,Low Density,Employer,3,70,1
+Female,39,Married,Self Employed,Medium Density,Relative/Guardian,3,70,0
+Female,55,Single,Self Employed,Medium Density,Relative/Guardian,3,40,0
+Male,60,Single,Self Employed,Low Density,Employer,2,165,1
+Male,63,Single,Employed,Low Density,Relative/Guardian,3,12,0
+Female,40,Single,Employed,Medium Density,Relative/Guardian,1,30,0
+Female,59,Single,Employed,Medium Density,Own,3,70,1
+Male,39,Widowed,Employed,Medium Density,Own,2,30,1
+Male,21,Widowed,Self Employed,High Density,Relative/Guardian,6,30,1
+Male,22,Single,Employed,High Density,Employer,6,30,0
+Female,51,Married,Self Employed,Medium Density,Relative/Guardian,4,70,0
+Female,47,Married,Self Employed,Low Density,Employer,2,165,1
+Female,23,Married,Self Employed,High Density,Tenant,5,40,0
+Female,33,Single,Self Employed,High Density,Tenant,4,40,0
+Male,54,Married,Self Employed,High Density,Relative/Guardian,6,12,0
+Male,55,Single,Self Employed,High Density,Employer,0,70,0
+Male,28,Married,Employed,Low Density,Employer,3,70,1
+Female,28,Married,Self Employed,High Density,Employer,5,30,0
+Female,56,Single,Self Employed,Low Density,Own,3,40,1
+Male,40,Widowed,Self Employed,Medium Density,Own,0,30,1
+Male,43,Married,Employed,Low Density,Relative/Guardian,4,70,1
+Male,38,Widowed,Self Employed,Medium Density,Relative/Guardian,6,30,0
+Male,38,Married,Employed,Low Density,Own,1,70,1
+Female,31,Married,Employed,Low Density,Own,0,30,1
+Female,22,Single,Employed,High Density,Relative/Guardian,4,12,0
+Male,23,Single,Self Employed,Medium Density,Own,5,30,1
+Male,31,Married,Employed,Low Density,Own,0,70,1
+Female,23,Widowed,Employed,High Density,Relative/Guardian,3,30,0
+Female,64,Single,Employed,Low Density,Relative/Guardian,3,195,0
+Female,46,Married,Self Employed,High Density,Own,6,12,0
+Female,54,Married,Self Employed,Medium Density,Relative/Guardian,1,165,1
+Female,51,Single,Self Employed,High Density,Own,3,30,0
+Male,35,Single,Employed,Low Density,Relative/Guardian,0,30,1
+Male,61,Widowed,Employed,Low Density,Own,3,12,1
+Male,54,Married,Self Employed,Medium Density,Relative/Guardian,6,165,0
+Female,39,Married,Self Employed,High Density,Relative/Guardian,3,165,0
+Male,43,Married,Self Employed,High Density,Tenant,6,30,0
+Female,44,Single,Self Employed,Medium Density,Relative/Guardian,2,30,0
+Female,65,Married,Employed,Low Density,Own,0,165,1
+Male,36,Married,Employed,Medium Density,Own,4,70,1
+Female,34,Single,Employed,Medium Density,Tenant,6,12,1
+Female,29,Widowed,Self Employed,Low Density,Relative/Guardian,5,195,0
+Female,36,Widowed,Employed,Medium Density,Own,3,30,1
+Male,22,Single,Self Employed,Medium Density,Employer,2,40,0
+Male,27,Married,Employed,Medium Density,Employer,4,30,1
+Female,63,Widowed,Employed,Low Density,Employer,6,165,0
+Male,44,Widowed,Self Employed,Medium Density,Tenant,4,70,0
+Female,43,Married,Self Employed,Low Density,Tenant,3,40,0
+Male,45,Married,Employed,Low Density,Employer,0,30,1
+Female,20,Single,Employed,Low Density,Relative/Guardian,5,70,1
+Female,54,Widowed,Employed,Medium Density,Relative/Guardian,3,195,0
+Female,62,Married,Employed,Medium Density,Own,2,165,1
+Female,62,Married,Employed,Medium Density,Own,0,70,1
+Female,46,Widowed,Employed,Medium Density,Own,2,30,1
+Female,25,Single,Employed,Low Density,Employer,2,30,1
+Female,49,Widowed,Employed,Medium Density,Own,5,30,1
+Male,45,Widowed,Employed,Low Density,Tenant,5,12,0
+Female,56,Single,Employed,High Density,Tenant,5,165,0
+Male,58,Married,Self Employed,High Density,Tenant,6,30,0
+Male,52,Married,Self Employed,Medium Density,Relative/Guardian,3,30,0
+Female,63,Married,Employed,Low Density,Own,2,30,1
+Male,55,Widowed,Self Employed,Low Density,Employer,1,12,1
+Male,55,Married,Self Employed,High Density,Relative/Guardian,3,40,0
+Male,47,Widowed,Employed,Low Density,Own,1,30,1
+Female,43,Married,Employed,High Density,Tenant,0,12,0
+Male,42,Married,Self Employed,High Density,Employer,1,70,1
+Male,52,Widowed,Employed,Low Density,Employer,5,30,1
+Female,32,Single,Self Employed,High Density,Employer,1,30,1
+Female,36,Widowed,Employed,Medium Density,Employer,3,30,1
+Male,39,Single,Employed,Low Density,Own,1,70,1
+Male,53,Single,Employed,High Density,Tenant,5,70,0
+Female,53,Married,Self Employed,High Density,Relative/Guardian,6,40,0
+Female,44,Married,Employed,Medium Density,Employer,0,30,1
+Female,42,Single,Employed,High Density,Relative/Guardian,3,12,0
+Male,50,Married,Employed,High Density,Relative/Guardian,1,40,0
+Male,46,Single,Employed,Medium Density,Employer,1,40,1
+Female,31,Single,Employed,High Density,Relative/Guardian,6,30,0
+Male,43,Married,Self Employed,Medium Density,Employer,6,30,0
+Male,44,Married,Employed,High Density,Relative/Guardian,4,30,0
+Female,46,Single,Employed,High Density,Own,0,30,1
+Male,51,Single,Employed,Low Density,Own,6,30,1
+Male,27,Widowed,Employed,Low Density,Employer,0,30,1
+Female,52,Married,Employed,Low Density,Employer,1,30,1
+Female,43,Married,Self Employed,Medium Density,Relative/Guardian,0,70,0
+Female,65,Married,Self Employed,High Density,Relative/Guardian,6,30,0
+Male,42,Single,Employed,Low Density,Relative/Guardian,1,165,1
+Female,58,Married,Employed,Low Density,Own,1,70,1
+Male,24,Single,Employed,Low Density,Relative/Guardian,1,30,1
+Male,57,Married,Self Employed,High Density,Relative/Guardian,4,70,0
+Male,46,Married,Employed,Low Density,Employer,2,165,1
+Male,41,Married,Self Employed,High Density,Tenant,5,70,0
+Male,26,Married,Self Employed,High Density,Tenant,4,30,0
+Male,49,Single,Self Employed,High Density,Own,4,70,0
+Male,31,Single,Self Employed,Low Density,Own,6,70,1
+Female,45,Married,Self Employed,Medium Density,Relative/Guardian,1,165,0
+Female,61,Widowed,Employed,High Density,Employer,4,30,1
+Male,27,Married,Employed,Low Density,Employer,2,30,1
+Female,60,Widowed,Self Employed,High Density,Tenant,0,195,0
+Female,40,Married,Self Employed,High Density,Employer,5,30,0
+Male,51,Widowed,Employed,Low Density,Tenant,1,30,1
+Female,29,Married,Self Employed,Medium Density,Tenant,1,165,0
+Female,25,Married,Employed,Low Density,Relative/Guardian,1,70,1
+Male,27,Married,Employed,Low Density,Own,2,30,1
+Female,57,Single,Self Employed,Medium Density,Employer,1,70,1
+Male,54,Married,Self Employed,Medium Density,Relative/Guardian,5,30,0
+Female,34,Widowed,Employed,High Density,Own,0,30,1
+Female,63,Married,Employed,High Density,Tenant,5,40,0
+Male,58,Widowed,Self Employed,High Density,Relative/Guardian,6,12,0
+Male,54,Single,Employed,High Density,Tenant,3,135,0
+Male,34,Married,Self Employed,High Density,Relative/Guardian,3,30,0
+Female,63,Married,Employed,Low Density,Tenant,3,30,1
+Female,39,Widowed,Self Employed,Medium Density,Relative/Guardian,2,165,0
+Male,48,Single,Employed,Low Density,Employer,3,165,1
+Female,53,Married,Self Employed,Medium Density,Tenant,3,165,0
+Male,44,Married,Employed,Low Density,Employer,1,30,1
+Male,60,Widowed,Employed,Low Density,Own,6,195,1
+Female,28,Widowed,Employed,Low Density,Own,4,165,1
+Male,28,Married,Self Employed,High Density,Employer,6,30,0
+Female,52,Single,Self Employed,High Density,Relative/Guardian,3,30,0
+Male,32,Married,Employed,Low Density,Tenant,5,70,0
+Female,40,Married,Employed,Low Density,Tenant,0,30,1
+Male,65,Single,Self Employed,Low Density,Own,1,70,1
+Female,61,Married,Employed,Low Density,Own,0,30,1
+Female,51,Married,Employed,Medium Density,Employer,6,30,1

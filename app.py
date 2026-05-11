@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import joblib
-import sqlite3
-import datetime
 
 app = Flask(__name__)
 
@@ -30,27 +28,6 @@ except Exception as e:
     data = pd.DataFrame()
 
 # ===============================
-# Initialize SQLite DB
-# ===============================
-def init_db():
-    conn = sqlite3.connect("history.db")
-    c = conn.cursor()
-    c.execute('''CREATE TABLE IF NOT EXISTS predictions (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    full_name TEXT,
-                    id_number TEXT,
-                    phone_number TEXT,
-                    monthly_income TEXT,
-                    prediction_summary TEXT,
-                    overall_decision TEXT,
-                    timestamp TEXT
-                )''')
-    conn.commit()
-    conn.close()
-
-init_db()
-
-# ===============================
 # Routes
 # ===============================
 @app.route("/")
@@ -60,15 +37,9 @@ def home():
 @app.route("/predict", methods=["GET", "POST"])
 def predict():
     if request.method == "POST":
-        # Collect extra fields
-        full_name = request.form.get("full_name")
-        id_number = request.form.get("id_number")
-        phone_number = request.form.get("phone_number")
-
         try:
             age = int(request.form.get("Age"))
             loan_amount = int(request.form.get("Loan_amt"))
-            monthly_income = int(request.form.get("Monthly_Income"))  # NEW FIELD
             gender = request.form.get("Gender")
             marital = request.form.get("Marital_Status")
             employment = request.form.get("Employment_Status")
@@ -111,8 +82,7 @@ def predict():
             "Residence_Area": residence,
             "Home_Ownership": home,
             "Number_of_Dependants": dependents,
-            "Loan amt": loan_amount,
-            "Monthly_Income": monthly_income   # NEW FIELD
+            "Loan amt": loan_amount
         }])
 
         # 🔧 Rename to match training feature names
@@ -125,10 +95,10 @@ def predict():
 
         # Encode + scale
         categorical_cols = ['Gender','Marital_Status','Employment','Residence','Home_Ownership']
-        continuous_cols = ['Age','Number_Dependents','Loan_Amount','Monthly_Income']
+        continuous_cols = ['Age','Number_Dependents','Loan_Amount']
 
         encoded_cat = encoder.transform(input_df[categorical_cols])
-        encoded_df = pd.DataFrame(encoded_cat)
+        encoded_df = pd.DataFrame(encoded_cat, columns=categorical_cols)
         cont_df = input_df[continuous_cols].astype(float)
         final_df = pd.concat([encoded_df, cont_df], axis=1)
 
@@ -136,54 +106,35 @@ def predict():
 
         # 🔀 Predict across all models
         results = {}
-        predictions = []
+        approvals = 0
+        rejections = 0
 
         if model_svm:
             pred = model_svm.predict(scaled)[0]
             probs = model_svm.predict_proba(scaled)[0]
             results["SVM"] = {"prediction": pred, "probs": probs}
-            predictions.append(pred)
+            approvals += (pred == 1)
+            rejections += (pred == 0)
 
         if model_rf:
             pred = model_rf.predict(scaled)[0]
             probs = model_rf.predict_proba(scaled)[0]
             results["Random Forest"] = {"prediction": pred, "probs": probs}
-            predictions.append(pred)
+            approvals += (pred == 1)
+            rejections += (pred == 0)
 
         if model_ensemble:
             pred = model_ensemble.predict(scaled)[0]
             probs = model_ensemble.predict_proba(scaled)[0]
             results["Ensemble"] = {"prediction": pred, "probs": probs}
-            predictions.append(pred)
-
-        # ✅ Majority voting
-        approvals = predictions.count(1)
-        rejections = predictions.count(0)
-
-        if approvals >= 2:
-            overall_decision = "Approved (Majority)"
-        elif rejections >= 2:
-            overall_decision = "Rejected (Majority)"
-        else:
-            overall_decision = "Tie — No clear majority"
+            approvals += (pred == 1)
+            rejections += (pred == 0)
 
         # Build summary
-        summary = f"{approvals} model(s) approved, {rejections} model(s) rejected. Overall Decision: {overall_decision}"
-
-        # Save to history (SQL fixed and Monthly Income included)
-        conn = sqlite3.connect("history.db")
-        c = conn.cursor()
-        c.execute(
-            "INSERT INTO predictions (full_name, id_number, phone_number, monthly_income, prediction_summary, overall_decision, timestamp) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?)",
-            (full_name, id_number, phone_number, str(monthly_income), summary, overall_decision, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-        )
-        conn.commit()
-        conn.close()
+        summary = f"{approvals} model(s) approved, {rejections} model(s) rejected."
 
         return render_template("predict.html", title="Predict",
                                results=results, summary=summary,
-                               full_name=full_name,
                                gender_options=data["Gender"].unique().tolist(),
                                marital_options=data["Marital_Status"].unique().tolist(),
                                employment_options=data["Employment_Status"].unique().tolist(),
@@ -197,15 +148,6 @@ def predict():
                            employment_options=data["Employment_Status"].unique().tolist(),
                            residence_options=data["Residence_Area"].unique().tolist(),
                            home_options=data["Home_Ownership"].unique().tolist())
-
-@app.route("/history")
-def history():
-    conn = sqlite3.connect("history.db")
-    c = conn.cursor()
-    c.execute("SELECT full_name, id_number, phone_number, monthly_income, prediction_summary, overall_decision, timestamp FROM predictions ORDER BY timestamp DESC")
-    rows = c.fetchall()
-    conn.close()
-    return render_template("history.html", title="History", rows=rows)
 
 @app.route("/model-info")
 def model_info():
