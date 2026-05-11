@@ -3,7 +3,7 @@
 <div class="card">
   <h2>📘 Feature Guide</h2>
   {% if data is not none and not data.empty %}
-    {% for col in ['Gender','Age','Marital_Status','Employment','Residence','Home_Ownership','Number_Dependents','Loan_Amount','Monthly_Income'] %}
+    {% for col in ['Gender','Age','Marital_Status','Employment','Residence','Home_Ownership','Number_Dependents','Loan_Amount'] %}
       <h4>{{ col }}</h4>
       {% if col in data.columns %}
         <p>Possible values: {{ data[col].unique().tolist() }}</p>
